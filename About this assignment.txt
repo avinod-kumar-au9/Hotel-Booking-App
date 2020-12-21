@@ -1,0 +1,3 @@
+this is the hotel app
+
+used Glogin and json-server to store the data

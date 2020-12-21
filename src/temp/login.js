@@ -1,9 +1,7 @@
 import axios from "axios";
 import React from "react";
 import "./login.css";
-import googlekeys from "../googlekeys.json";
-import { Link } from "react-router-dom";
-import { GoogleLogin } from "react-google-login";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -118,17 +116,7 @@ class App extends React.Component {
           <button className="btn" onClick={this.login}>
             Login
           </button>
-          <br />
-
-          <p className="or">OR</p>
-
-          <GoogleLogin
-            className="glogin"
-            clientId={googlekeys.clientId}
-            onSuccess={this.loggedinstate}
-            onFailure={this.loggedinstate}
-            buttonText="Login with Google"
-          />
+          
         </div>
       </div>
     );
