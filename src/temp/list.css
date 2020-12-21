@@ -1,0 +1,41 @@
+.loader {
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .nodata {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 250px;
+  }
+  
+  .paramgroup * {
+    margin-top: 10px;
+  }
+  
+  /* .title{
+      margin: 40px 0;
+  } */
+  
+  .boxing {
+    box-shadow: 5px 0px 5px grey, 0px 5px 5px grey;
+    margin-bottom: 20px;
+    background-color: rgb(243, 239, 239);
+  }
+  
+  .maindiv {
+    margin-top: 50px;
+  }
+  
+  .result {
+    font-size: medium;
+  }
+  
+  /* .filter{
+      width: 200px;
+  } */
+  
+  .roomFilter{
+    margin-bottom: 80px;
+  }

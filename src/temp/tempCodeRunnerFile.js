@@ -1,0 +1,1 @@
+JSON.parse(sessionStorage.getItem("Guser_obj")).name

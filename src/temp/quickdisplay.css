@@ -1,0 +1,30 @@
+.img {
+  width: 250px;
+  height: 200px;
+}
+
+.text {
+  /* text-align: center; */
+  align-self: center;
+}
+
+.title {
+  text-align: center;
+}
+
+
+.quicksea{
+    margin-top: 200px;
+}
+
+.sinitem{
+    box-shadow: 10px 0px 25px #ddd1d1,0px 10px 25px #ddd1d1;
+    padding: 10px 10px;
+    margin: 25px 0;
+    background-color: #f6f2f2;
+}
+
+
+.loadingimg{
+    width: 500px;
+}

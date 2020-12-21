@@ -1,0 +1,25 @@
+
+
+ ul .items{
+    margin: 0 20px;
+}
+
+.nav-span *{
+    display: block;
+    
+    text-align: center;
+    height: 19px;
+    
+}
+
+
+.left * {
+    float: left;
+
+}
+
+.right * {
+    text-align: end;
+    
+}
+

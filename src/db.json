@@ -1,0 +1,74 @@
+{
+  "Register": [
+    {
+      "name": "vinod",
+      "email": "a",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "hotelName": "The Corinthians Resort",
+      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
+      "Name": "",
+      "Mobile": "",
+      "Date": "",
+      "id": 2
+    },
+    {
+      "hotelName": "The Corinthians Resort",
+      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
+      "Name": "",
+      "Mobile": "",
+      "Date": "",
+      "id": 3
+    },
+    {
+      "hotelName": "The Taj Mahal Palace",
+      "hotelAddress": "Apollo Bunder, Mumbai, Maharashtra",
+      "Name": "",
+      "Mobile": "",
+      "Date": "",
+      "id": 4
+    },
+    {
+      "hotelName": "The Corinthians Resort",
+      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
+      "Name": "",
+      "Mobile": "",
+      "Date": "",
+      "id": 5
+    },
+    {
+      "hotelName": "Ramada Plaza",
+      "hotelAddress": "NH 21 , Chandigarh Delhi National Highway, Zirakpur",
+      "Name": "vinod",
+      "Mobile": "",
+      "Date": "",
+      "id": 6
+    },
+    {
+      "hotelName": "Westwood Residence",
+      "hotelAddress": "264/80 Alto-Savlo,Porvorim, Bardez Goa",
+      "Name": "Vinod Kumar",
+      "Mobile": "",
+      "Date": "",
+      "id": 7
+    },
+    {
+      "hotelName": "Ramada Plaza",
+      "hotelAddress": "NH 21 , Chandigarh Delhi National Highway, Zirakpur",
+      "Name": "vinod A",
+      "Mobile": "",
+      "Date": "",
+      "id": 8
+    },
+    {
+      "hotelName": "The Corinthians Resort",
+      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
+      "Name": "Vinod Kumar",
+      "Mobile": "",
+      "Date": "",
+      "id": 9
+    }
+  ]
+}

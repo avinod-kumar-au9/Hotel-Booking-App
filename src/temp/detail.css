@@ -1,0 +1,43 @@
+.detailrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    column-gap: 30px;
+}
+
+.detailrow p{
+    font-size: larger;
+}
+
+.detailsrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 10px; */
+    margin-top: 50px;
+}
+
+.detailscol li{
+    font-size: larger;
+}
+
+.back{
+    background-color: rgb(219, 26, 26);
+    width: 100px;
+}
+.place{
+    width: 150px;
+}
+
+.butt *{
+margin: 0 10px;
+}
+
+.detailcol img{
+    width: 100%;
+}
+
+.detailloadingimg{
+    
+    width: 500px;
+    margin-left: 25%;
+}
