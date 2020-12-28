@@ -6,6 +6,7 @@ import List from "./list";
 import Details from "./details";
 import Booking from "./booking";
 import ViewBooking from "./viewbookings";
+import AdminPage from "./AdminViewbookings";
 import Login from "./login";
 import Register from "./register";
 
@@ -25,6 +26,7 @@ class Routes extends React.Component {
         <Route path="/details/:id" component={Details} />
         <Route path="/booking/:id" component={Booking} />
         <Route path="/viewbookings" component={ViewBooking} />
+        <Route path="/adminpage" component={AdminPage} />
       </BrowserRouter>
     );
   }

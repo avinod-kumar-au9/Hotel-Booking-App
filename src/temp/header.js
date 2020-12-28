@@ -13,7 +13,10 @@ class Header extends React.Component {
     sessionStorage.removeItem("id");
     sessionStorage.removeItem("Guser_token");
     sessionStorage.removeItem("Guser_obj");
+    sessionStorage.removeItem("usertype");
   };
+
+  
 
   render() {
     if (
@@ -24,7 +27,7 @@ class Header extends React.Component {
     ) {
       return (
         <div>
-          <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
+          <nav className="navbar navbar-expand-sm navbar-dark  nav bg-primary">
             <div className="container-fluid">
               <ul className="navbar-nav me-auto mb-1 mb-lg-0">
                 <div>
@@ -69,7 +72,8 @@ class Header extends React.Component {
               </ul>
               <ul className="navbar-nav mr-auto mb-1 mb-lg-0">
                 <ul className="navbar-nav mr navbar-right  ">
-                  <li className="nav-item left ">
+                  { sessionStorage.getItem("usertype") == "User" &&
+                    <li className="nav-item left ">
                     <Link
                       to="/viewbookings"
                       className="nav-link items nav-span "
@@ -82,8 +86,21 @@ class Header extends React.Component {
                               .name}
                       </span>
                     </Link>
-                  </li>
+                  </li>}
 
+                  { sessionStorage.getItem("usertype") !== "User" &&
+                    <li className="nav-item left">
+                    <Link to="/adminpage" className="nav-link items">
+                      
+                      <span className="material-icons">account_circle </span>
+                      <span>
+                        {sessionStorage.getItem("name")
+                          ? sessionStorage.getItem("name")
+                          : JSON.parse(sessionStorage.getItem("Guser_obj"))
+                              .name}
+                      </span>
+                    </Link>
+                  </li>}
                   <li className="nav-item left" onClick={this.Handler}>
                     <Link to="/" className="nav-link items">
                       Logout

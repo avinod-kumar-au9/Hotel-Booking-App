@@ -28,7 +28,7 @@ class Search extends React.Component {
           </option>
         );
       });
-    } 
+    }
   };
 
   cityHandler = (e) => {
@@ -53,7 +53,7 @@ class Search extends React.Component {
           </option>
         );
       });
-    } 
+    }
   };
 
   hotelHandler = (e) => {
@@ -65,21 +65,27 @@ class Search extends React.Component {
       console.log(this.state.hotel);
     }
     return (
-      <div className="quick">
-        <h3>Are you in a hurry to plan your trip, try</h3>
-        <h2>Quick Book</h2>
-        <div className="first">
-          <select onChange={this.cityHandler} defaultValue="Select City">
-            <option disabled>Select City</option>
-            {this.renderCity()}
-          </select>
-          {/* </div> */}
-          {/* <div className="second"> */}
-          <select onChange={this.hotelHandler} defaultValue="Select Hotel">
-            <option disabled>Select Hotel</option>
-            {this.renderHotels()}
-          </select>
+      <div class="container-fluid">
+      <div className="row align-items-center background">
+        <div className="col-lg-12">
+          <div className="row justify-content-center align-items-center quick">
+            <h2>Are you in a hurry to plan your trip, try</h2>
+            <h1>Quick Book</h1>
+            <div className="col-lg-2 first">
+              <select onChange={this.cityHandler} defaultValue="Select City">
+                <option disabled>Select City</option>
+                {this.renderCity()}
+              </select>
+            </div>
+            <div className="col-lg-2 first">
+              <select onChange={this.hotelHandler} defaultValue="Select Hotel">
+                <option disabled>Select Hotel</option>
+                {this.renderHotels()}
+              </select>
+            </div>
+          </div>
         </div>
+      </div>
       </div>
     );
   }

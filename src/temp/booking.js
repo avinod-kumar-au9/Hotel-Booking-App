@@ -1,7 +1,7 @@
 import React from "react";
 import "./booking.css";
 import { Link } from "react-router-dom";
-const api=`http://localhost:3000/Register`
+const api = `http://localhost:3000/Bookings`;
 
 class Booking extends React.Component {
   constructor() {
@@ -13,30 +13,38 @@ class Booking extends React.Component {
       Name: "",
       Mobile: "",
       Date: "",
+
+      Status: "Pending",
+      Email: "",
+    };
+  }
+
+  componentDidMount() {
+    // console.log("in booking");
+    if (
+      (sessionStorage.getItem("name") === null ||
+        sessionStorage.getItem("name") === undefined) &&
+      (sessionStorage.getItem("Guser_token") === undefined ||
+        sessionStorage.getItem("Guser_token") === null)
+    ) {
+      this.props.history.push("/login");
+    }
+
+    if (sessionStorage.getItem("name")) {
+      this.setState({
+        ...this.state,
+        Name: sessionStorage.getItem("name"),
+        Email: sessionStorage.getItem("email")
+          
+      });
+    }
+    if (sessionStorage.getItem("Guser_obj")) {
+      this.setState({
+        ...this.state,
+        Name: JSON.parse(sessionStorage.getItem("Guser_obj")).name,
+      });
     }
   }
-
-componentDidMount(){
-  // console.log("in booking");
-  if ((sessionStorage.getItem("name")===null || sessionStorage.getItem("name")=== undefined) &&
-  (sessionStorage.getItem("Guser_token") === undefined || sessionStorage.getItem("Guser_token")=== null)){
-    this.props.history.push("/login")
-  }
-
-  if (sessionStorage.getItem("name")){
-    this.setState({
-      ...this.state,
-      Name:sessionStorage.getItem("name")
-    })
-  }if (sessionStorage.getItem("Guser_obj")){
-    this.setState({
-      ...this.state,
-      Name:JSON.parse(sessionStorage.getItem("Guser_obj")).name
-    })
-  }
-  
-}
-
 
   dateHandler = (e) => {
     this.setState({
@@ -55,25 +63,20 @@ componentDidMount(){
   };
 
   bookingHandler = () => {
-    fetch(
-      api,
-      {
-        method: "POST",
-        headers: {
-          "Accept": "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(this.state),
-      }
-    ).then(this.props.history.push("/viewbookings"));
+    fetch(api, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(this.state),
+    }).then(this.props.history.push("/viewbookings"));
 
-    localStorage.removeItem("url")
+    localStorage.removeItem("url");
   };
 
   Link;
   render() {
-    
-    
     return (
       <div>
         <div className="container">

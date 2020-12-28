@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
-import "./login.css";
 
+import "./login.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -13,6 +13,13 @@ class App extends React.Component {
       data: "",
       islogged: false,
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      ...this.state,
+      data: "",
+    });
   }
 
   login = () => {
@@ -30,6 +37,7 @@ class App extends React.Component {
           sessionStorage.setItem("name", this.state.data[i].name);
           sessionStorage.setItem("id", this.state.data[i].id);
           sessionStorage.setItem("email", this.state.data[i].email);
+          sessionStorage.setItem("usertype", this.state.data[i].userType);
 
           if (
             localStorage.getItem("url") === null ||
@@ -44,8 +52,6 @@ class App extends React.Component {
     }
   };
 
- 
-
   loggedinstate = (resp) => {
     if (!resp && !resp.accessToken) {
       alert("login failed");
@@ -55,6 +61,7 @@ class App extends React.Component {
       var user_Data = resp.profileObj;
 
       sessionStorage.setItem("Guser_token", JSON.stringify(user_token));
+      sessionStorage.setItem("Guser_obj", JSON.stringify(user_Data));
       sessionStorage.setItem("Guser_obj", JSON.stringify(user_Data));
       if (
         localStorage.getItem("url") === null ||
@@ -116,7 +123,6 @@ class App extends React.Component {
           <button className="btn" onClick={this.login}>
             Login
           </button>
-          
         </div>
       </div>
     );

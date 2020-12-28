@@ -15,6 +15,10 @@ th{
   text-align: center;
 }
 
-.email{
+.username{
   margin-bottom: 50px;
+}
+
+.userDetails{
+  margin-left: 20px;
 }

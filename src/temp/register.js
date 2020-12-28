@@ -12,10 +12,11 @@ class Register extends React.Component {
       name: "",
       email: "",
       password: "",
+      userType:"User"
       
       
       }
-    };
+    }
   }
 
   register = () => {

@@ -1,0 +1,52 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th{
+    background-color: #dddddd;
+    
+  }
+  
+  .username{
+    margin-bottom: 50px;
+  }
+
+  .accetbutt{
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .rejectbutt{
+    width: 100px;
+    background-color: red;
+  }
+
+  .hoteldropdown{
+
+    border: 1px solid #d1c7c7;
+    background-color: #dddddd;
+    text-align: center;
+    height: 30px;
+  }
+  .hoteldropdown *{
+    
+    background-color: white;
+    
+  }
+
+  .hoteldropdown:hover{
+    border: 1px solid black;
+  }
+
+  .userDetails{
+    margin-left: 20px;
+  }

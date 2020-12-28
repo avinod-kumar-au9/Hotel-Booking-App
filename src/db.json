@@ -2,73 +2,66 @@
   "Register": [
     {
       "name": "vinod",
-      "email": "a",
+      "email": "abc@gmail.com",
       "password": "1",
+      "userType": "Admin",
       "id": 1
     },
     {
-      "hotelName": "The Corinthians Resort",
-      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
-      "Name": "",
-      "Mobile": "",
-      "Date": "",
+      "name": "Modi",
+      "email": "xyz@gmail.com",
+      "password": "1",
+      "userType": "User",
       "id": 2
     },
     {
-      "hotelName": "The Corinthians Resort",
-      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
-      "Name": "",
-      "Mobile": "",
-      "Date": "",
+      "name": "Nirav Modi",
+      "email": "nirav@gmail.com",
+      "password": "1",
+      "userType": "User",
       "id": 3
+    }
+  ],
+  "Bookings": [
+    {
+      "hotelName": "Rodas - An Ecotel Hotel",
+      "hotelAddress": "Central Avenue, Hiranandani Gardens, Powai, Mumbai - 400076",
+      "Name": "Modi",
+      "Mobile": "1234567890",
+      "Date": "2020-12-23",
+      "Status": "Pending",
+      "Email": "xyz@gmail.com",
+      "id": 1
     },
     {
       "hotelName": "The Taj Mahal Palace",
       "hotelAddress": "Apollo Bunder, Mumbai, Maharashtra",
-      "Name": "",
-      "Mobile": "",
-      "Date": "",
+      "Name": "Modi",
+      "Mobile": "75",
+      "Date": "2020-12-31",
+      "Status": "Pending",
+      "Email": "xyz@gmail.com",
+      "id": 2
+    },
+    {
+      "hotelName": "DoubleTree by Hilton",
+      "hotelAddress": "Kadamba Plateau, Panjim Old Goa Bypass Road, Velha Goa, Panaji,Tiswadi Goa",
+      "Name": "Modi",
+      "Mobile": "098",
+      "Date": "2020-12-01",
+      "Status": "Pending",
+      "Email": "xyz@gmail.com",
+      "id": 3
+    },
+    {
+      "hotelName": "Hometel Chandigarh",
+      "hotelAddress": "Plot No.147-148, Industrial Area Phase I, Near ELANTE MALL, Chandigarh",
+      "Name": "Modi",
+      "Mobile": "123",
+      "Date": "2020-12-02",
+      "Status": "Pending",
+      "Email": "xyz@gmail.com",
       "id": 4
-    },
-    {
-      "hotelName": "The Corinthians Resort",
-      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
-      "Name": "",
-      "Mobile": "",
-      "Date": "",
-      "id": 5
-    },
-    {
-      "hotelName": "Ramada Plaza",
-      "hotelAddress": "NH 21 , Chandigarh Delhi National Highway, Zirakpur",
-      "Name": "vinod",
-      "Mobile": "",
-      "Date": "",
-      "id": 6
-    },
-    {
-      "hotelName": "Westwood Residence",
-      "hotelAddress": "264/80 Alto-Savlo,Porvorim, Bardez Goa",
-      "Name": "Vinod Kumar",
-      "Mobile": "",
-      "Date": "",
-      "id": 7
-    },
-    {
-      "hotelName": "Ramada Plaza",
-      "hotelAddress": "NH 21 , Chandigarh Delhi National Highway, Zirakpur",
-      "Name": "vinod A",
-      "Mobile": "",
-      "Date": "",
-      "id": 8
-    },
-    {
-      "hotelName": "The Corinthians Resort",
-      "hotelAddress": "Nyati County, NIBM Annexe, South Pune Mohamadwadi Pune",
-      "Name": "Vinod Kumar",
-      "Mobile": "",
-      "Date": "",
-      "id": 9
     }
   ]
 }
