@@ -69,7 +69,7 @@ class App extends React.Component {
           return (
             <Link to={`/details/${user._id}`} className="row boxing" key={idx}>
               <div className="col-md-6 p-md-4">
-                <img src={user.thumb} className="w-100" alt="sdsd" />
+                <img src={user.thumb} loading="lazy" className="w-100" alt="sdsd" />
               </div>
               <div className="col-md-6 p-4 ps-md-0">
                 <h3 className="mt-0">{user.name}</h3>
